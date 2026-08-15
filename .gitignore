@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Locally enrolled biometric data. Never commit these files.
+data/face_dataset/*
+data/targets/*
+data/face_rec_model.yml
+data/label_mapping.json
+data/*calibration*.json
+!data/face_dataset/.gitkeep
+!data/targets/.gitkeep
+!data/label_mapping.example.json
+
+# Models are downloaded from their official sources on first use.
+models/*.onnx
+!models/.gitkeep
+!models/README.md
+
+*.log
+*.zip
